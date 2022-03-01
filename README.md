@@ -8,15 +8,13 @@ This repository shows examples and guides for using [Terraform](https://terrafor
 
 Leading on from session 3 this repository provides instruction for both provisioning your cluster, pushing docker images to your own container registry and adopting a GitOps workflow using ArgoCD
 
-### Step 1 - Switch to the session 4 branch
+### Step 1 - Review the differences
 
-If you haven't already done so you'll need to switch to the session 4 branch of this repository.
+The main difference between this repository and the repository you have previously worked with is that we now also provision a container registry.
 
-Once you have navigated to the **devops-upskill-aks-terraform** repository you can switch branches by running:
+Specifically, you'll provision your own [Azure Container Registry (ACR)](https://azure.microsoft.com/en-us/services/container-registry/)
 
-```
-git checkout session-004-gitops
-```
+You can see the new terraform code within the [acr.tf](./acr.tf) file. This will provision a [container registry](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/container_registry) called "devopsupskillregistry" suffixed with a series of random letters.
 
 ### Step 2 - Provision your cluster
 
