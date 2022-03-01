@@ -2,6 +2,9 @@
 
 This repository shows examples and guides for using [Terraform](https://terraform.io) to provision a [AKS (Azure Kubernetes Service) Cluster](https://azure.microsoft.com/en-gb/services/kubernetes-service/) on Azure
 
+As well as the instructions below we've also created a suite of [FAQ's](./docs/FAQS.md) that are worth reviewing if you experience any interesting challenges.
+
+
 ## Instructions
 
 ### Pre-requisites
@@ -21,12 +24,6 @@ You can see the new terraform code within the [acr.tf](./acr.tf) file. This will
 You have probably destroyed your Kubernetes cluster following the previous session. 
 
 Follow through the [Provisioning](./docs/PROVISIONING.md) guide to re-provision your Kubernetes cluster.
-
-The Terraform files have also been updated to include the creation of a container registry.
-
-For those interested in the terraform changes, you can see a diff of what has changed since session 3 here:
-
-[https://github.com/techreturners/devops-upskill-aks-terraform/compare/session-004-gitops](https://github.com/techreturners/devops-upskill-aks-terraform/compare/session-004-gitops)
 
 ### Step 3 - Build and push your docker image
 
