@@ -120,6 +120,8 @@ Now you know the files and have your service principal details, the next step is
 
 Update the appId and password as per your service principal account.
 
+**IMPORTANT NOTE:** Make sure you do NOT commit/push the files with your service principal details.
+
 ### Step 6 - Initialise terraform
 
 We need to get terraform to pull down the Azure provider.
@@ -151,7 +153,7 @@ terraform plan
 
 ### Step 8 - Create your cluster with apply
 
-We can then create your cluster by applying the configuration.
+We can then create your cluster by applying the configuration. Grab yourself a drink ☕️
 
 ```
 terraform apply
@@ -159,7 +161,9 @@ terraform apply
 
 Sit back and relax - it might take 10 mins or so to create your cluster.
 
-Once its finished it'll output something like the info below. Those **outputs** are defined in the **outputs.tf** file.
+Once its finished it'll output something like the info below. 
+
+Those **outputs** are defined in the **outputs.tf** file.
 
 ```
 Apply complete! Resources: 2 added, 0 changed, 0 destroyed.
@@ -191,7 +195,7 @@ az aks get-credentials --resource-group $(terraform output -raw resource_group_n
 It should say something like:
 
 ```
-Merged "devops-upskill-aks" as current context in /Users/jamesheggs/.kube/config
+Merged "devops-upskill-aks" as current context in /Users/someuser/.kube/config
 ```
 
 Just hit 'y' if it asks you whether you wish to overwrite previous values.
@@ -210,8 +214,8 @@ It should show something like:
 
 ```
 NAME                              STATUS   ROLES   AGE     VERSION
-aks-default-51320324-vmss000000   Ready    agent   4m41s   v1.18.14
-aks-default-51320324-vmss000001   Ready    agent   3m57s   v1.18.14
+aks-default-51320324-vmss000000   Ready    agent   4m41s   v1.21.9
+aks-default-51320324-vmss000001   Ready    agent   3m57s   v1.21.9
 ```
 
 Now you can head back over to the [README](../README.md) for the next stage which is pushing your docker images to your registry.
