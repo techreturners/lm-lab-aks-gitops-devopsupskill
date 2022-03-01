@@ -2,7 +2,7 @@ terraform {
   required_providers {
     azurerm = {
       source  = "hashicorp/azurerm"
-      version = "2.48.0"
+      version = "2.97.0"
     }
 
     # Random is used to try and make the ACR registry name is globally unique to Azure
@@ -12,6 +12,6 @@ terraform {
     }
   }
 
-  required_version = "~> 0.14"
+  required_version = ">= 0.14"
 }
 
