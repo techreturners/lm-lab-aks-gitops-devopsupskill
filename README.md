@@ -19,6 +19,8 @@ Specifically, you'll provision your own [Azure Container Registry (ACR)](https:/
 
 You can see the new terraform code within the [acr.tf](./acr.tf) file. This will provision a [container registry](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/container_registry) called "devopsupskillregistry" suffixed with a series of random letters.
 
+The reason for the random characters are that container registry names in Azure have to be globally unique so hopefully using the random characters means we won't experience clashes across learners.
+
 ### Step 2 - Provision your cluster
 
 You have probably destroyed your Kubernetes cluster following the previous session. 
