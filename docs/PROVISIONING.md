@@ -4,7 +4,7 @@ The steps here cover how to provision your AKS cluster and container registry.
 
 ## Instructions
 
-**NOTE:** You might have already performed some of the steps (such as installing tools) mentioned below. If so you can ignore those steps and move directly to **Step 4**
+**NOTE:** You might have already performed some of the steps (such as installing tools) mentioned below. If so you can ignore those steps and move directly to **Step 5** and re-use an existing service principal.
 
 ### Step 1 - Install and configure the Azure CLI
 
