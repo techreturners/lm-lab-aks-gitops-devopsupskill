@@ -1,10 +1,6 @@
 # AKS and Terraform
 
-At this point you'll have heard material around a few key cloud topics such as regions, availability zones, cloud networking and VPC's. You'll have also heard information around Kubernetes. 
-
-Building on this theoretical knowledge, this guided lab will show how to create the various cloud services required to provision a Kubernetes cluster on AWS. For that provisioning you'll be taking the **Infrastructure as Code** approach and using [Terraform](https://terraform.io) to create our cloud infrastructure.
-
-For AWS, the end result is that you'll have a [AKS (Azure Kubernetes Service) Cluster](https://azure.microsoft.com/en-gb/services/kubernetes-service/).
+This repository shows examples and guides for using [Terraform](https://terraform.io) to provision a [AKS (Azure Kubernetes Service) Cluster](https://azure.microsoft.com/en-gb/services/kubernetes-service/) on Azure
 
 As well as the instructions below we've also created a suite of [FAQ's](./docs/FAQS.md) that are worth reviewing if you experience any interesting challenges.
 
